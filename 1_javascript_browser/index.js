@@ -4,6 +4,7 @@
 //
 // on Mac (using Chrome), use Option+Command+J to open the console and see this message.
 
-console.log('Hello from the developer console!');
+const add = require("./add.js");
+const multiply = require("./multiply.js");
 
-console.log(new Date());
+console.log(multiply(add(3, 2), 4));
