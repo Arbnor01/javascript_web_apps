@@ -20,4 +20,11 @@ describe('Page view', () => {
     const paragraphs = document.querySelectorAll('p');
     expect(paragraphs.length).toBe(3);
   });
+
+  it('should clear all paragraphs from the document', () => {
+    const view = new View();
+    view.clearParagraphs();
+    const paragraphs = document.querySelectorAll('p');
+    expect(paragraphs.length).toBe(0);
+  });
 });
